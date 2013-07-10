@@ -1,12 +1,11 @@
 class Secret_Number
+	@@number_range = [1,2,3,4,5,6,7,8,9,10]
 
 	def self.choose_number
-		secret_number = rand(1..10)
+		@@number_range.sample
 	end
 	
 end
-
-
 
 ###############################################################################
 #
