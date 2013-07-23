@@ -10,16 +10,21 @@ puts "The game is to guess the secret number. You have three turns to guess it, 
 # Tell them the rules, saying they need to guess a number 1-10, and that they have three turns.
 
 # 'Hard code' the secret number.
-secret number = 2
+secret_number = 2
+
 # Ask the user for their guess.
 puts "What is your first guess?"
-guess = gets
-if guess > 2
+guess = gets.to_i
+if guess > secret_number
 	puts "Oops, your guess is too large!"
-if guess < 2
+end
+
+if guess < secret_number
 	puts "Oops, your guess is too small!"
 	2.downto(1) do |guess|
 		puts "You have #{guess} many guesses before the game is over, enter another number."
 	puts "Oh no, you're out of guesses! Whoops, you lose. The secret number is 2!"
+end
 else
 	puts "Congratulations, you've won the game!"
+end

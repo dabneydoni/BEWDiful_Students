@@ -1,4 +1,4 @@
-require_relative 'secret_number'
+require_relative 'secret_number' 
 require_relative 'game'
 require_relative 'player'
 
