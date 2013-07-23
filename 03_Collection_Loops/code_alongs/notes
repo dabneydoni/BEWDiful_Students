@@ -1,0 +1,24 @@
+def application_info(name, stars=3)
+  puts "#{name} currently has #{stars} stars"
+end
+
+application_info('Angry Birds', 5) # => Angry Birds currently has 5 stars
+application_info('Temple Run') # => Templ Run currently has 3 stars
+
+You can only use "" when using #{}.
+You can use single or double quotes when using strings.
+
+'Splat' arguments captures an undefined # of arguments. And you don't care what the arguments are either.
+
+def dramatic_exit(screamer, *people)
+  puts "#{screamer} yelled \"#{people.join(',')}! GET IN THE VAN\""
+end
+
+dramatic_exit("Salman", "Brooks") # => Salman yelled "Brooks! GET IN THE VAN"
+dramatic_exit("Salman", "Brooks", "Brian") # => Salman yelled "Brooks, Brian! GET IN THE VAN"
+dramatic_exit("Salman", "Brooks", "Brian", "Jay Z") # => Salman yelled "Brooks, Brian, Jay Z! GET IN THE VAN"
+
+export EDITOR=sublime
+hit "edits"
+
+_ = the last thing that's been returned
